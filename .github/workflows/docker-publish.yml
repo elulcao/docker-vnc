@@ -8,14 +8,14 @@ on:
 
     # Publish `v1.2.3` tags as releases.
     tags:
-      - v*
+      - v0.1
 
   # Run tests for any PRs.
   pull_request:
 
 env:
   # TODO: Change variable to your image's name.
-  IMAGE_NAME: image
+  IMAGE_NAME: "docker-vnc:latest"
 
 jobs:
   # Run tests.
@@ -30,6 +30,8 @@ jobs:
         run: |
           if [ -f docker-compose.yml ]; then
             docker-compose --file docker-compose.yml build
+            docker-compose --file docker-compose.yml up
+            docker-compose --file docker-compose.yml down
           else
             docker build . --file Dockerfile
           fi
