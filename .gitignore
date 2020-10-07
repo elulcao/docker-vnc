@@ -1,0 +1,12 @@
+# Mac files
+.DS_Store
+
+# virtualenv
+venv/
+ENV/
+
+# logs
+*.log
+
+# Editors
+*.code-workspace

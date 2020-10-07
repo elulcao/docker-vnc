@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  master:
+    build: .
+    image: "docker-vnc:latest"
+    container_name: docker-vnc
+    ports:
+      - "22"
+      - "5900"
+      - "5901"
+    volumes:
+      - "/tmp/:/scratch/shared"
