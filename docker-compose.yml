@@ -11,3 +11,12 @@ services:
       - "5901"
     volumes:
       - "/tmp/:/scratch/shared"
+  sut:
+    image: "docker-vnc:latest"
+    container_name: docker-vnc-sut
+    ports:
+      - "22"
+      - "5900"
+      - "5901"
+    volumes:
+      - "/tmp/:/scratch/shared"
