@@ -1,3 +1,16 @@
+<p align="center">
+  <a href="https://github.com/elulcao/docker-vnc/">
+    <img src=".github/screeshot.png" alt="Docker docker-vnc" width="200" height="165">
+  </a>
+</p>
+
+<h3 align="center">docker-vnc</h3>
+
+<p align="center">
+    Remotely connect over SSH to other hosts and forward applications.
+  <br>
+</p>
+
 # docker-vnc
 
 This image will run on most platforms that support Docker including Docker for Mac, Docker for Windows, Docker for Linux and Raspberry Pi 3 boards.
